@@ -28,7 +28,6 @@ def print_coin(coin_id):
             modifier = '1;32'
         elif val > 3:
             modifier = '0;32'
-        col = '31' if val < 0 else '32'
         r = '{:6.2f}'.format(val)
         return CSI + modifier + ';40m' + r + CSI + '0m'
 
