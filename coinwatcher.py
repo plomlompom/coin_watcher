@@ -46,8 +46,8 @@ coins = {}
 for entry in payload:
     coin = {}
     coin['symbol'] = entry['symbol'] 
-    coin['€'] = float(entry['price_eur'])
-    coin['$'] = float(entry['price_usd'])
+    coin['€'] = float_nonny(entry['price_eur'])
+    coin['$'] = float_nonny(entry['price_usd'])
     coin['vol'] = float_nonny(entry['24h_volume_eur'])
     coin['change_1h'] = float_nonny(entry['percent_change_1h'])
     coin['change_1d'] = float_nonny(entry['percent_change_24h'])
